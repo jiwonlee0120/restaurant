@@ -44,7 +44,7 @@ p {
 @media (min-width: 300px) {
   /* header starts */
   header {
-    background-image: url(/img/header-bg.jpg);
+    background-image: url("../img/header-bg.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -167,7 +167,7 @@ p {
   /* about section ends */
   /* features section starts */
   .features > aside {
-    background-image: url(/img/features.jpg);
+    background-image: url("../img/features.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -274,28 +274,28 @@ p {
     align-items: center;
   }
   .menu figure:first-child > aside {
-    background-image: url(/img/menu-01.jpg);
+    background-image: url(../img/menu-01.jpg);
   }
   .menu figure:nth-child(2) > aside {
-    background-image: url(/img/menu-02.jpg);
+    background-image: url(../img/menu-02.jpg);
   }
   .menu figure:nth-child(3) > aside {
-    background-image: url(/img/menu-03.jpg);
+    background-image: url(../img/menu-03.jpg);
   }
   .menu figure:nth-child(4) > aside {
-    background-image: url(/img/menu-04.jpg);
+    background-image: url(../img/menu-04.jpg);
   }
   .menu figure:nth-child(5) > aside {
-    background-image: url(/img/menu-05.jpg);
+    background-image: url(../img/menu-05.jpg);
   }
   .menu figure:nth-child(6) > aside {
-    background-image: url(/img/menu-06.jpg);
+    background-image: url(../img/menu-06.jpg);
   }
   .menu figure:nth-child(7) > aside {
-    background-image: url(/img/menu-07.jpg);
+    background-image: url(../img/menu-07.jpg);
   }
   .menu figure:nth-child(8) > aside {
-    background-image: url(/img/menu-08.jpg);
+    background-image: url(../img/menu-08.jpg);
   }
   .menu figure > aside {
     background-position: center;
