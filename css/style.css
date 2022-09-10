@@ -1,0 +1,811 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+}
+
+.title h2 {
+  color: darkgreen;
+}
+
+h3 {
+  color: royalblue;
+}
+
+figcaption h5 {
+  color: violet;
+}
+
+main > section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 7vh;
+  padding: 5%;
+  padding-top: 15%;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 25px;
+}
+
+p {
+  color: dimgray;
+  line-height: 1.6;
+}
+
+@media (min-width: 300px) {
+  /* header starts */
+  header {
+    background-image: url(/img/header-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    color: whitesmoke;
+  }
+  header h1 {
+    font-size: 34px;
+    font-weight: 400;
+  }
+  header h4 {
+    font-size: 20px;
+    font-weight: 300;
+  }
+  header nav > ul {
+    display: none;
+  }
+  header > section {
+    background-color: rgba(100, 100, 100, 0.5);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+  header > section > article {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 5%;
+  }
+  header i {
+    font-size: 48px;
+  }
+  header summary {
+    position: relative;
+    font-size: 28px;
+    padding: 5%;
+  }
+  header details {
+    display: unset;
+    text-align: right;
+  }
+  header details ul {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(100, 100, 100, 0.3);
+  }
+  header details li {
+    list-style-type: none;
+    border-bottom: 0.5px solid whitesmoke;
+  }
+  header details a {
+    display: block;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 16px;
+    padding: 1%;
+  }
+  header details a:hover {
+    background-color: rgba(240, 248, 255, 0.5);
+    color: dimgray;
+  }
+  /* header ends */
+  /* about section starts */
+  .title h2 {
+    font-size: 28px;
+    font-weight: 400;
+  }
+  .title p {
+    text-align: center;
+  }
+  .about img {
+    width: 100%;
+  }
+  .about > article:last-child {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10vh;
+  }
+  figure {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+  }
+  figcaption {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+  }
+  figcaption h3 {
+    font-size: 24px;
+    font-weight: 400;
+  }
+  figcaption h5 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  figcaption > ul {
+    display: flex;
+    -moz-column-gap: 3vh;
+         column-gap: 3vh;
+    padding-left: 5%;
+  }
+  figcaption li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+  }
+  figcaption a {
+    padding: 25%;
+    color: dimgray;
+    text-decoration: none;
+    font-size: 24px;
+  }
+  figcaption a:hover {
+    color: whitesmoke;
+    background-color: violet;
+  }
+  /* about section ends */
+  /* features section starts */
+  .features > aside {
+    background-image: url(/img/features.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+  }
+  .read {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10vh;
+  }
+  .read p {
+    text-align: center;
+  }
+  .read i {
+    color: dimgray;
+    font-size: 60px;
+  }
+  .read aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 7vh;
+  }
+  .read > aside:first-child > a:last-child {
+    background-color: cadetblue;
+    padding: 4% 10%;
+    color: whitesmoke;
+    text-decoration: none;
+  }
+  .read > aside:first-child > a:last-child:hover {
+    background-color: rgb(56, 108, 110);
+  }
+  .read > aside:nth-child(2) > a:last-child {
+    background-color: darkseagreen;
+    padding: 4% 10%;
+    color: whitesmoke;
+    text-decoration: none;
+  }
+  .read > aside:nth-child(2) > a:last-child:hover {
+    background-color: rgb(78, 106, 78);
+  }
+  .read > aside:last-child > a:last-child {
+    background-color: brown;
+    padding: 4% 10%;
+    color: whitesmoke;
+    text-decoration: none;
+  }
+  .read > aside:last-child > a:last-child:hover {
+    background-color: rgb(76, 18, 18);
+  }
+  .history {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+  }
+  .history img {
+    width: 100%;
+  }
+  .history > div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vh;
+  }
+  .history h3,
+.menu h3 {
+    font-size: 26px;
+    font-weight: 300;
+  }
+  .history a,
+.menu a,
+.contact a {
+    color: royalblue;
+  }
+  /* features section ends */
+  /* menu section starts */
+  .menu ul {
+    height: 20vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 5vh;
+         column-gap: 5vh;
+  }
+  .menu ul > li {
+    width: 40%;
+    list-style-type: none;
+    text-align: center;
+  }
+  .menu ul > li > a {
+    display: block;
+    border: 1px solid darkgreen;
+    padding: 5%;
+    color: darkgreen;
+    text-decoration: none;
+  }
+  .menu ul > li > a:hover {
+    background-color: darkgreen;
+    color: whitesmoke;
+  }
+  .menu figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu figure:first-child > aside {
+    background-image: url(/img/menu-01.jpg);
+  }
+  .menu figure:nth-child(2) > aside {
+    background-image: url(/img/menu-02.jpg);
+  }
+  .menu figure:nth-child(3) > aside {
+    background-image: url(/img/menu-03.jpg);
+  }
+  .menu figure:nth-child(4) > aside {
+    background-image: url(/img/menu-04.jpg);
+  }
+  .menu figure:nth-child(5) > aside {
+    background-image: url(/img/menu-05.jpg);
+  }
+  .menu figure:nth-child(6) > aside {
+    background-image: url(/img/menu-06.jpg);
+  }
+  .menu figure:nth-child(7) > aside {
+    background-image: url(/img/menu-07.jpg);
+  }
+  .menu figure:nth-child(8) > aside {
+    background-image: url(/img/menu-08.jpg);
+  }
+  .menu figure > aside {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50vh;
+    height: 50vh;
+  }
+  .menu figure figcaption {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+    width: 90%;
+  }
+  .menu > article:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10vh;
+  }
+  .menu > article:last-child {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vh;
+  }
+  .menu > article:last-child img {
+    width: 100%;
+    height: auto;
+  }
+  .menu div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+    align-items: flex-end;
+  }
+  .menu div > h3 {
+    width: 100%;
+  }
+  .menu div > a {
+    padding: 4% 10%;
+    background-color: transparent;
+    border: 0.5px solid dimgray;
+    color: dimgray;
+    text-decoration: none;
+    text-align: right;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .menu div > a:hover {
+    background-color: dimgray;
+    color: whitesmoke;
+  }
+  small {
+    color: darkgreen;
+    font-size: 22px;
+    font-weight: 400;
+  }
+  /* menu section ends */
+  /* contact section starts */
+  .contact {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vh;
+  }
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+    align-items: flex-end;
+    width: 100%;
+  }
+  .contact form input,
+.contact form textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 0.5px solid dimgray;
+    font-size: 16px;
+  }
+  .contact form input {
+    height: 5vh;
+  }
+  .contact form textarea {
+    height: 20vh;
+    resize: none;
+  }
+  [value=Send] {
+    background-color: darkgreen;
+    color: whitesmoke;
+    width: 30%;
+    height: 6vh;
+    cursor: pointer;
+  }
+  [value=Send]:hover {
+    background-color: transparent;
+    border: 1px solid darkgreen;
+    color: darkgreen;
+  }
+  .address {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vh;
+    padding-top: 10%;
+  }
+  .address h4 {
+    color: darkgreen;
+    font-size: 26px;
+    font-weight: 300;
+  }
+  .address > ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .address > ul > li {
+    list-style-type: none;
+    display: flex;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
+  .address > ul > li > i {
+    color: darkgreen;
+  }
+  .address > ul > li > a {
+    text-decoration: none;
+    color: dimgray;
+  }
+  .address > div > ul {
+    display: flex;
+    -moz-column-gap: 3vh;
+         column-gap: 3vh;
+    padding-left: 5%;
+  }
+  .address div li {
+    list-style-type: none;
+  }
+  .address > div a {
+    color: dimgray;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 25%;
+  }
+  .address > div a:hover {
+    color: whitesmoke;
+    background-color: violet;
+  }
+  /* contact section ends */
+  /* faqs section starts */
+  .faqs > details {
+    color: dimgray;
+    font-size: 16px;
+  }
+  .faqs > details i {
+    display: flex;
+    align-items: center;
+  }
+  .faqs > details summary {
+    display: flex;
+    border: 1px solid lightgray;
+    padding: 5%;
+  }
+  .faqs > details[open] summary {
+    color: royalblue;
+    border: 1px solid lightgray;
+  }
+  .faqs > details[open] i {
+    display: flex;
+    align-items: center;
+    transform: rotate(-90deg);
+    color: dimgray;
+  }
+  .faqs > details[open] p {
+    padding: 5%;
+    border: none;
+  }
+  /* faqs section ends */
+  /* footer starts */
+  footer {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+  }
+  /* footer ends */
+}
+@media (min-width: 700px) {
+  /* header starts */
+  header {
+    height: 30vh;
+  }
+  header h4 {
+    font-size: 18px;
+  }
+  header details {
+    display: none;
+  }
+  header > section {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  header article {
+    width: 35%;
+  }
+  header nav {
+    width: 65%;
+    padding-bottom: 4.9%;
+    padding-right: 2%;
+  }
+  header nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  header nav > ul > li {
+    width: 100%;
+    text-align: center;
+    list-style-type: none;
+  }
+  header nav > ul > li > a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 10%;
+  }
+  header nav > ul > li > a:hover {
+    border-bottom: 0.5px solid whitesmoke;
+    background-color: transparent;
+  }
+  /* header ends */
+  main > section {
+    padding: 1%;
+    padding-top: 10%;
+  }
+  /* about section starts */
+  .title h2 {
+    font-size: 34px;
+    font-weight: 400;
+  }
+  .title p {
+    font-size: 20px;
+    width: 85%;
+  }
+  .about figure {
+    flex-direction: row;
+    -moz-column-gap: 2vh;
+         column-gap: 2vh;
+  }
+  .about figure img {
+    width: 15vh;
+  }
+  .about ul {
+    padding-left: 3%;
+  }
+  .about h3 {
+    font-size: 26px;
+  }
+  .about h5 {
+    font-size: 20px;
+  }
+  .about p {
+    font-size: 18px;
+  }
+  /* about section ends */
+  /* features section starts */
+  .read i {
+    font-size: 72px;
+  }
+  .read p {
+    font-size: 20px;
+  }
+  .read a {
+    padding: 0;
+  }
+  .read > aside:first-child > a:last-child,
+.read aside:nth-child(2) > a:last-child,
+.read aside:last-child > a:last-child {
+    padding: 2% 5%;
+  }
+  .history {
+    flex-direction: row;
+    -moz-column-gap: 3vh;
+         column-gap: 3vh;
+  }
+  .history > aside {
+    display: flex;
+    align-items: center;
+    width: 50%;
+  }
+  .history > div {
+    width: 50%;
+    font-size: 18px;
+  }
+  /* features section ends */
+  /* menu section starts */
+  .menu ul {
+    flex-wrap: nowrap;
+    height: 0;
+    -moz-column-gap: 2vh;
+         column-gap: 2vh;
+  }
+  .menu ul > li {
+    width: 15%;
+  }
+  .menu ul > li > a {
+    padding: 8%;
+  }
+  .menu > article:nth-child(3) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    -moz-column-gap: 1.4vh;
+         column-gap: 1.4vh;
+    -moz-column-gap: 3.2vh;
+         column-gap: 3.2vh;
+  }
+  .menu figure {
+    width: 30%;
+  }
+  .menu figure > aside {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20vh;
+    height: 20vh;
+  }
+  .menu figure h3 {
+    font-size: 18px;
+  }
+  .menu small {
+    font-size: 18px;
+  }
+  .menu > article:last-child {
+    flex-direction: row;
+    -moz-column-gap: 3vh;
+         column-gap: 3vh;
+  }
+  .menu > article:last-child > figure {
+    width: 50%;
+  }
+  .menu > article:last-child > div {
+    width: 40%;
+    font-size: 18px;
+  }
+  /* menu section ends */
+  /* contact section starts */
+  .contact > article:nth-child(2) {
+    display: flex;
+    -moz-column-gap: 5vh;
+         column-gap: 5vh;
+  }
+  .contact form {
+    width: 45%;
+    padding-left: 1%;
+  }
+  .address {
+    width: 45%;
+    padding-top: 0;
+  }
+  .address > ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+  }
+  [value=Send] {
+    height: 3vh;
+  }
+  /* contact section ends */
+  /* faqs section starts */
+  .faqs {
+    padding: 8%;
+  }
+  .faqs > details {
+    color: dimgray;
+    font-size: 22px;
+  }
+  .faqs > details summary {
+    display: flex;
+    border: 1px solid lightgray;
+    padding: 3%;
+    justify-content: space-between;
+  }
+  .faqs > details[open] p {
+    padding: 3%;
+    font-size: 20px;
+  }
+  /* faqs section ends */
+  /* footer starts */
+  footer {
+    height: 0;
+    padding-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+  }
+  /* footer ends */
+}
+@media (min-width: 1000px) {
+  /* header starts */
+  header {
+    height: 40vh;
+    background-size: cover;
+  }
+  header > section > article {
+    padding: 3%;
+  }
+  header nav {
+    padding-bottom: 3%;
+  }
+  header h1 {
+    font-size: 40px;
+  }
+  header h4 {
+    font-size: 24px;
+  }
+  /* header ends */
+  main > section {
+    padding: 2%;
+    padding-top: 6%;
+  }
+  .title p {
+    width: 60%;
+    font-size: 22px;
+  }
+  /* about section starts */
+  .about > article:last-child {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .about figure {
+    width: 50%;
+  }
+  /* about section ends */
+  /* features section starts */
+  .features > aside {
+    background-position: center;
+    height: 40vh;
+  }
+  .read {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .read aside {
+    width: 30%;
+  }
+  .history h3 {
+    font-size: 34px;
+  }
+  .history p {
+    font-size: 22px;
+  }
+  /* features section ends */
+  /* menu section starts */
+  .menu > article:nth-child(3) {
+    justify-content: space-between;
+  }
+  .menu > article:nth-child(3) > figure {
+    width: 23%;
+  }
+  .menu > article:nth-child(3) > figure > aside {
+    width: 25vh;
+    height: 25vh;
+  }
+  .menu > article:nth-child(3) > figure > figcaption {
+    width: 80%;
+  }
+  .menu > article:last-child {
+    -moz-column-gap: 8vh;
+         column-gap: 8vh;
+  }
+  .menu > article:last-child > div {
+    justify-content: center;
+  }
+  .menu > article:last-child > div > a {
+    padding: 2% 6%;
+  }
+  .menu h3 {
+    font-size: 34px;
+  }
+  .menu p {
+    font-size: 22px;
+  }
+  /* menu section ends */
+  /* contact section starts */
+  .contact > article:last-child {
+    display: flex;
+    justify-content: center;
+  }
+  .contact form {
+    width: 40%;
+  }
+  .address {
+    width: 40%;
+    font-size: 20px;
+  }
+  [value=Send] {
+    width: 20%;
+  }
+  /* contact section ends */
+  /* faqs section starts */
+  .faqs {
+    align-items: center;
+  }
+  .faqs > details {
+    width: 70%;
+  }
+  /* faqs section ends */
+  /* footer starts */
+  footer {
+    padding: 3%;
+  }
+}/*# sourceMappingURL=style.css.map */

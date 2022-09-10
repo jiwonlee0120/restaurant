@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: $fontFamily;
+}
+
+.title h2 {
+    color: $green;
+}
+
+h3 {
+    color: $blue;
+}
+
+figcaption h5 {
+    color: $violet;
+}
+
+main > section {
+    @include flexBox;
+    row-gap: 7vh;
+    padding: 5%;
+    padding-top: 15%;
+    
+}
+
+.title {
+    @include flexBox;
+    align-items: center;
+    row-gap: 25px;
+}
+
+p {
+    color: $pColor;
+    line-height: 1.6;
+}
