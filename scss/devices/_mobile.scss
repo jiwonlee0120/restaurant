@@ -1,7 +1,7 @@
 @media (min-width: 300px) {
     /* header starts */
     header {
-        background-image: url(./img/header-bg.jpg);
+        background-image: url("./img/header-bg.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -152,7 +152,7 @@
      /* features section starts */
      .features {
         > aside {
-            background-image: url(./img/features.jpg);
+            background-image: url("./img/features.jpg");
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -288,49 +288,49 @@
 
             &:first-child {
                 > aside {
-                    background-image: url(./img/menu-01.jpg);
+                    background-image: url("./img/menu-01.jpg");
                 }
             }
 
             &:nth-child(2) {
                 > aside {
-                    background-image: url(./img/menu-02.jpg);
+                    background-image: url("./img/menu-02.jpg");
                 }
             }
 
             &:nth-child(3) {
                 > aside {
-                    background-image: url(./img/menu-03.jpg);
+                    background-image: url("./img/menu-03.jpg");
                 }
             }
 
             &:nth-child(4) {
                 > aside {
-                    background-image: url(./img/menu-04.jpg);
+                    background-image: url("./img/menu-04.jpg");
                 }
             }
 
             &:nth-child(5) {
                 > aside {
-                    background-image: url(./img/menu-05.jpg);
+                    background-image: url("./img/menu-05.jpg");
                 }
             }
 
             &:nth-child(6) {
                 > aside {
-                background-image: url(./img/menu-06.jpg);
+                background-image: url("./img/menu-06.jpg");
                 }
             }
 
             &:nth-child(7) {
                 > aside {
-                    background-image: url(./img/menu-07.jpg);
+                    background-image: url("./img/menu-07.jpg");
                 }
             }
 
             &:nth-child(8) {
                 > aside {
-                    background-image: url(./img/menu-08.jpg);
+                    background-image: url("./img/menu-08.jpg");
                 }
             }
         
